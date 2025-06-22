@@ -30,12 +30,10 @@ export default function Home({ isLoggedIn }: Props) {
             </button>
           </>
         ) : (
-         <Link href={/signUp}>
-          Sign up
-          </Link>
-          <Link href={/signUp}>
-          Log in
-          </Link>
+          <>
+            <Link href="/signUp">Sign up</Link>
+            <Link href="/logIn">Log in</Link>
+          </>
         )}
       </div>
     </div>
