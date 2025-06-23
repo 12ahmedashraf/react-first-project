@@ -3,7 +3,7 @@ type Props = {
   isLoggedIn: boolean;
   profilePic: string;
 };
-export default function Home({ isLoggedIn }: Props) {
+export default function NavBar({ isLoggedIn }: Props) {
   return (
     <div>
       <img src="./app/favicon.ico" alt="" />
