@@ -3,8 +3,8 @@ import NavBar from "@/components/NavBar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Class 27 App",
-  description: "Next.js site for Class 27",
+  title: "AlexHack-protons",
+  description: "AlexHack-proton",
 };
 export default function RootLayout({
   children,
