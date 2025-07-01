@@ -15,21 +15,11 @@ export default function NavBar({ isLoggedIn }: Props) {
             HOME
           </h3>
         </Link>
-        <Link href="/about">
-          <h3 className=" border-b-2 border-transparent hover:border-blue-500 hover:scale-105 transition-all duration-400">
-            ABOUT
-          </h3>
-        </Link>
         {isLoggedIn && (
           <>
             <Link href="/announcements" className="">
               <h3 className=" border-b-2 border-transparent hover:border-blue-500 hover:scale-105 transition-all duration-400">
                 ANNOUNCEMENTS
-              </h3>
-            </Link>
-            <Link href="/shop">
-              <h3 className=" border-b-2 border-transparent hover:border-blue-500 hover:scale-105 transition-all duration-400">
-                SHOP
               </h3>
             </Link>
           </>
@@ -39,20 +29,6 @@ export default function NavBar({ isLoggedIn }: Props) {
             CLASS 27
           </h3>
         </Link>
-        {isLoggedIn && (
-          <>
-            <Link href="/birthdays">
-              <h3 className=" border-b-2 border-transparent hover:border-blue-500 hover:scale-105 transition-all duration-400">
-                BIRTHDAYS
-              </h3>
-            </Link>
-            <Link href="/study">
-              <h3 className=" border-b-2 border-transparent hover:border-blue-500 hover:scale-105 transition-all duration-400">
-                STUDY!
-              </h3>
-            </Link>
-          </>
-        )}
       </div>
       <div className="cta-icons flex items-center gap-2">
         {isLoggedIn ? (

@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NavBar isLoggedIn={true} profilePic="/user.png" />
-        <main className="  bg-black dark:bg-gray-900 text-black dark:text-white">
+        <main className="  bg-black dark:bg-gray-900 text-black dark:text-white over-scroll">
           {children}
         </main>
       </body>
