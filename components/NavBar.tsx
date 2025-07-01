@@ -8,7 +8,7 @@ type Props = {
 export default function NavBar({ isLoggedIn }: Props) {
   return (
     <div className="flex justify-between  bg-black h-fit p-4">
-      <Image src="/logo.jpg" alt="" height={40} width={200} />
+      <Image src="/logo.jpg" alt="" height={40} width={100} />
       <div className="links flex justify-between text-md text-white Link:montserrat items-center gap-10">
         <Link href="/">
           <h3 className=" border-b-2 border-transparent hover:border-blue-500 hover:scale-105 transition-all duration-400">
