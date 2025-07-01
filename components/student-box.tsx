@@ -6,7 +6,11 @@ interface Student {
   email: string;
 }
 
-export default function StudentBox({ children }: { children: React.ReactNode }) {
+export default function StudentBox({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [students, setStudents] = useState<Student[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -24,8 +28,8 @@ export default function StudentBox({ children }: { children: React.ReactNode }) 
   }, []);
 
   return (
-    <div className="bg-blue-50 border-2 border-blue-500 rounded-2xl p-6 m-6 shadow-md">
-      <h2 className="text-2xl font-bold text-blue-700 mb-4">Student Box</h2>
+    <div className="bg-pink-50 border-2 border-pink-500 rounded-2xl p-6 m-6 shadow-md">
+      <h2 className="text-2xl font-bold text-pink-700 mb-4">Members Box</h2>
       <div className="mb-4 text-gray-700">{children}</div>
 
       {loading ? (
@@ -37,7 +41,7 @@ export default function StudentBox({ children }: { children: React.ReactNode }) 
               key={student.id}
               className="bg-white p-3 rounded-md shadow-sm hover:bg-gray-50 transition"
             >
-              <strong className="text-blue-600">{student.name}</strong>
+              <strong className="text-pink-600">{student.name}</strong>
               <span className="text-gray-600 block text-sm">
                 {student.email}
               </span>

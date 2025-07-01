@@ -17,7 +17,7 @@ export default function AnnouncementBox({
   AnnouncementID,
 }: Props) {
   return (
-    <div className=" w-100 h-100 flex flex-col content-center items-center border-2 border-blue-500">
+    <div className=" w-100 h-100 flex flex-col content-center items-center border-2 border-pink-500 ml-10">
       <AnnouncementOverview
         banner={banner}
         title={title}
